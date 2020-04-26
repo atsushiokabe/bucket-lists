@@ -70,8 +70,8 @@ Things you may want to cover:
 
 |Column|Type|Option|
 |------|----|------|
-|user_id|references|
-|list_id|references|
+|user_id|references|null:false,foreign_key: true|
+|list_id|references|null:false,foreign_key: true|
 
   - belongs_to user
   - belongs_to list
